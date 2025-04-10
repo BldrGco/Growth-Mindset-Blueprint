@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Mindset Blueprint | 10x Your Growth and Transform Your Mindset in Just 30 Days</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #ffd700;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .features {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features h2, .testimonials h2, .guarantee h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .features ul {
+            list-style: none;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .features li {
+            padding: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .price-tag {
+            font-size: 2.5rem;
+            color: #ffd700;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .testimonials {
+            background: #f5f5f5;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .testimonials blockquote {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-style: italic;
+        }
+
+        .guarantee {
+            text-align: center;
+            padding: 40px 20px;
+            background: #e9ecef;
+        }
+
+        .email-form {
+            padding: 40px 20px;
+            text-align: center;
+            background: #fff;
+        }
+
+        .email-form input {
+            padding: 10px;
+            width: 250px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .price-tag {
+                font-size: 2rem;
+            }
+            .features, .testimonials, .guarantee, .email-form {
+                padding: 40px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .cta-button {
+                padding: 12px 24px;
+                font-size: 0.9rem;
+            }
+            .email-form input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>10x Your Growth and Transform Your Mindset in Just 30 Days</h1>
+        <p>Transform your mindset in 30 days with 6 modules and over 7 tools, frameworks, and systems for unstoppable growth</p>
+        <div class="price-tag">Just £49</div>
+        <a href="#purchase" class="cta-button">BUY NOW & GET INSTANT ACCESS</a>
+    </section>
+
+    <section class="features">
+        <h2>What’s Inside the Blueprint:</h2>
+        <ul>
+            <li>✓ 6 Comprehensive Modules</li>
+            <li>✓ 5 Transformative Mindset Shifts</li>
+            <li>✓ 4 Professional Assessment Tools</li>
+            <li>✓ 3 Complete Measurement Systems</li>
+            <li>✓ Lifetime Access to All Materials</li>
+        </ul>
+        <a href="#purchase" class="cta-button">PURCHASE NOW</a>
+    </section>
+
+    <section class="testimonials">
+        <h2>What People Say:</h2>
+        <blockquote>
+            "This digital blueprint completely changed how I approach challenges. The frameworks are practical and the results are real."
+            - Sarah K., Entrepreneur
+        </blockquote>
+        <a href="#purchase" class="cta-button">GET YOUR COPY TODAY</a>
+    </section>
+
+    <section class="guarantee">
+        <h2>30-Day Money-Back Guarantee</h2>
+        <p>Not satisfied with the blueprint? Get a full refund within 30 days, no questions asked.</p>
+        <a href="#purchase" class="cta-button">BUY NOW FOR £49</a>
+    </section>
+
+    <section class="email-form">
+        <h2>Want Updates & Free Tips?</h2>
+        <form onsubmit="alert('Thank you for subscribing!'); return false;">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">SUBSCRIBE</button>
+        </form>
+    </section>
+
+    <script>
+        // Payment redirect
+        document.querySelectorAll('a[href="#purchase"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.location.href = "YOUR_PAYMENT_LINK_HERE"; // Replace with your payment URL
+            });
+        });
+    </script>
+
+    <!-- Google Analytics (optional) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR_GA_ID');
+    </script>
+    -->
+</body>
+</html>
